@@ -1,0 +1,70 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+.light-mode {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Dark Mode Toggle Button */
+#dark-mode-toggle {
+    transition: all 0.3s ease;
+}
+
+/* Drag & Drop Styling */
+.drag-drop-box {
+    border: 2px dashed #007bff;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.drag-drop-box:hover {
+    background-color: #e3f2fd;
+}
+
+/* Dark Mode for Drag & Drop */
+.dark-mode .drag-drop-box {
+    background-color: #222;
+    border-color: #bbb;
+}
+
+.dark-mode .drag-drop-box:hover {
+    background-color: #333;
+}
+
+/* Image Preview */
+#preview-image, #result-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+/* Spinner */
+#loading-spinner {
+    margin-top: 20px;
+}
+
+/* Smooth fade-in effect */
+.d-none {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.d-block {
+    opacity: 1;
+}
